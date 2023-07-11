@@ -1,4 +1,4 @@
-// Collection of 5 random cat facts - Was able to get the data
+//Collection of 5 random cat facts - Was able to get the data
 fetch("https://cat-fact.herokuapp.com/facts")
     .then((response) => response.json())
     .then((JSONresponse) => console.log(JSONresponse))
@@ -11,4 +11,8 @@ fetch("https://meowfacts.herokuapp.com/?count=90")
     .then((JSONresponse) => {
         const catFacts = JSONresponse.data
         console.log(catFacts)
+        const wholeDocument = document.querySelector("body")
+        const newHTwo = document.createElement("h2")
+        newHTwo.innerText = catFacts[5]
+        wholeDocument.append(newHTwo)
     });
