@@ -1,3 +1,5 @@
+//   catzApp.js file //
+
 //Collection of 5 random cat facts - Was able to get the data
 fetch("https://cat-fact.herokuapp.com/facts")
     .then((response) => response.json())
