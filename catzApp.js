@@ -13,8 +13,8 @@ fetch("https://meowfacts.herokuapp.com/?count=90")
     .then((JSONresponse) => {
         const catFacts = JSONresponse.data
         console.log(catFacts)
-        const wholeDocument = document.querySelector("body")
-        const newHTwo = document.createElement("h2")
-        newHTwo.innerText = catFacts[5]
-        wholeDocument.append(newHTwo)
+        // const wholeDocument = document.querySelector("body")
+        // const newHTwo = document.createElement("h2")
+        // newHTwo.innerText = catFacts[5]
+        // wholeDocument.append(newHTwo)
     });
