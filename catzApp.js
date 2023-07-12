@@ -18,5 +18,5 @@ fetch("https://meowfacts.herokuapp.com/?count=90")
         firstFetchedFact.innerText = catFacts[3]
         catFactOne.append(firstFetchedFact)
 
-        
+
     });
