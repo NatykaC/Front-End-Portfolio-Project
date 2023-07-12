@@ -18,3 +18,9 @@
   .two {
     grid-column: 1 / span 4;
   }
+  .three {
+    grid-column: 1 / span 3;
+  }
+  .four {
+    grid-column: 1 / span 3;
+  }
