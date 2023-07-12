@@ -1,1 +1,20 @@
 /* catzStyles.css file */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  /* .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+  } */
+  .one {
+    grid-column: 1 / span 4;
+  }
+  .two {
+    grid-column: 1 / span 4;
+  }

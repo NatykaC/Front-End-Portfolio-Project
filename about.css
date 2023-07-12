@@ -1,3 +1,9 @@
 /* about.css file */
 
-    
+.container {
+    display: grid;
+    grid-template-columns: minmax(100px, auto);
+    grid-gap: 5px;
+    grid-auto-rows: repeat(auto-fill, minmax(200px, 1fr));
+  }  
+
