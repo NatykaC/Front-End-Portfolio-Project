@@ -1,33 +1,44 @@
-/* catzStyles.css file */
-/* .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 5px;
-    grid-auto-rows: minmax(100px, auto);
-  } */
-  .container {
+.container {
     display: grid;
     grid-template-columns: minmax(100px, auto);
     justify-content: center;
     grid-gap: 20px;
     grid-row: repeat(6, 1fr);
-  }
-  .one {
+}
+.one {
     grid-column: 1 / span 2;
-  }
-  .two {
+}
+.two {
     grid-column: 1 / span 2;
-  }
-  .three {
+}
+.three {
     grid-column: 1 / span 3;
-  }
-  .four {
+}
+.four {
     grid-column: 1 / span 3;
-  }
-  .five {
+}
+.five {
     grid-column: 1 / span 3;
-  }
-  .six {
+}
+.six {
     grid-column: 3;
     grid-row: 1 / span 3
-  } 
+} 
+.seven {
+    grid-column: 1;
+}
+.eight {
+    grid-column: 2;
+}
+.nine {
+    grid-column: 3;
+}
+.ten {
+    grid-column: 1;
+}
+.eleven {
+    grid-column: 2;
+}
+.twelve {
+    grid-column: 3;
+}
