@@ -37,12 +37,21 @@ fetch("https://meowfacts.herokuapp.com/?count=90")
                 const errEmail = document.querySelector("#err-email");
                 if(event.target["firstName"].value === "" || null){
                     errFirstName.innerText = "Error! First Name Required!"
+                        errFirstName.addEventListener("click", (event)=>{
+                            errFirstName.remove()
+                    });
                 }
                 else if(event.target["lastName"].value === "" || null){
-                    errFirstName.innerText = "Error! Last Name Required!"
+                    errLastName.innerText = "Error! Last Name Required!"
+                        errLastName.addEventListener("click", (event)=>{
+                            errLastName.remove()
+                    });
                 }
                 else if(event.target["email"].value === "" || null){
-                    errFirstName.innerText = "Error! Email Required!"
+                    errEmail.innerText = "Error! Email Required!"
+                        errEmail.addEventListener("click", (event)=>{
+                            errEmail.remove()
+                    });
                 }
                 else {
                 const randomFactSubmit = document.querySelector("#random-fact-submit");
@@ -53,5 +62,4 @@ fetch("https://meowfacts.herokuapp.com/?count=90")
                 event.target.reset()
                 };
             });
-        
     });
