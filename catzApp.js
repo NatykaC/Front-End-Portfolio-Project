@@ -29,16 +29,29 @@ fetch("https://meowfacts.herokuapp.com/?count=90")
         const fourthFetchedFact = document.querySelector("#fetch-four");
             fourthFetchedFact.innerText = catFacts[27];
             catFactFour.append(fourthFetchedFact);
-
         const addFact = document.querySelector("#add-fact");
             addFact.addEventListener("submit", (event)=>{
                 event.preventDefault();
+                const errFirstName = document.querySelector("#err-first-name");
+                const errLastName = document.querySelector("#err-last-name");
+                const errEmail = document.querySelector("#err-email");
+                if(event.target["firstName"].value === "" || null){
+                    errFirstName.innerText = "Error! First Name Required!"
+                }
+                else if(event.target["lastName"].value === "" || null){
+                    errFirstName.innerText = "Error! Last Name Required!"
+                }
+                else if(event.target["email"].value === "" || null){
+                    errFirstName.innerText = "Error! Email Required!"
+                }
+                else {
                 const randomFactSubmit = document.querySelector("#random-fact-submit");
                 const thankYouMessage = document.querySelector("#thank-you");
                 randomFactSubmit.innerText = `❤️ Here's your random cat fact: ❤️\n  ${catFacts[4]}`;
                 thankYouMessage.innerText = "Thanks for signing up!!";
-                addFact.append(thankYouMessage,randomFactSubmit)
-                
+                addFact.append(thankYouMessage,randomFactSubmit);
+                event.target.reset()
+                };
             });
         
     });
