@@ -1,3 +1,6 @@
+* {
+  background-color: rgba(255, 228, 225, 0.178);
+}
 .container {
     display: grid;
     grid-template-columns: minmax(100px, auto);
@@ -7,38 +10,134 @@
 }
 .one {
     grid-column: 1 / span 2;
+    background-color: rgba(255, 228, 225, 0.178);
 }
 .two {
     grid-column: 1 / span 2;
+    background-color: rgba(255, 228, 225, 0.178);
 }
 .three {
     grid-column: 1 / span 3;
+    background-color: rgba(255, 228, 225, 0.178);
 }
 .four {
     grid-column: 1 / span 3;
+    background-color: rgba(255, 228, 225, 0.178);
 }
 .five {
     grid-column: 1 / span 3;
+    background-color: rgba(255, 228, 225, 0.178);
 }
 .six {
     grid-column: 3;
-    grid-row: 1 / span 3
+    grid-row: 1 / span 3;
+    border: 1px dotted black;
+    padding: 5px
 } 
 .seven {
     grid-column: 1;
+    border: 10px solid mistyrose;
+    padding: 5px;
 }
 .eight {
     grid-column: 2;
+    border: 10px solid mistyrose;
+    padding: 5px;
 }
 .nine {
     grid-column: 3;
+    border: 10px solid mistyrose;
+    padding: 5px;
 }
 .ten {
     grid-column: 1;
+    border: 10px solid mistyrose;
+    padding: 5px;
 }
 .eleven {
     grid-column: 2;
+    border: 10px solid mistyrose;
+    padding: 5px;
 }
 .twelve {
     grid-column: 3;
+    border: 10px solid mistyrose;
+    padding: 5px;
+}
+h1 {
+  text-align: center;
+  font-family: cursive;
+}
+h1:hover {
+  color:coral;
+  text-decoration: underline;
+}
+h2 {
+  text-align: center;
+  font-family: cursive;
+}
+h2:hover {
+  color:coral;
+  text-decoration: underline;
+}
+#intro {
+  font-family: fantasy;
+}
+#intro:hover {
+  color:firebrick;
+  text-decoration: underline;
+}
+h4 {
+  font-style: italic;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h4:hover {
+  color:crimson;
+}
+#sign-up {
+  text-align: center;
+}
+#successful {
+  text-align: center;
+}
+#add-fact {
+  text-align: center;
+}
+#sign-up:hover {
+  color:indianred;
+  text-decoration: underline;
+}
+#successful:hover {
+  color:indianred;
+  text-decoration: underline;
+}
+#firstName:hover {
+  color:indianred;
+  text-decoration: underline;
+}
+#lastName:hover {
+  color:indianred;
+  text-decoration: underline;
+}
+#email:hover {
+  color:indianred;
+  text-decoration: underline;
+}
+#err-last-name {
+  color:red;
+}
+#err-first-name {
+  color: red;
+}
+#err-email {
+  color: red;
+}
+p {
+  font-family:Arial, Helvetica, sans-serif;
+}
+a:hover {
+  color:fuchsia;
+}
+img:hover {
+  border: 5px dotted rgb(244, 161, 152);
 }

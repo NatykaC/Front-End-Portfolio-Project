@@ -5,3 +5,39 @@
     grid-auto-rows: repeat(auto-fill, minmax(200px, 1fr)); 
   }  
 
+* {
+  background-color:mistyrose;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 {
+  text-align: center;
+  font-family: cursive;
+}
+h3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1:hover {
+  color:magenta;
+  text-decoration-line: underline;
+}
+h2:hover {
+  color: fuchsia;
+  text-decoration-line: underline;
+}
+h3:hover {
+  color:fuchsia;
+  text-decoration-line: underline;
+}
+p{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ul {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a:hover {
+  color:hotpink;
+}
