@@ -1,18 +1,8 @@
-//   catzApp.js file //
 
-//Collection of 5 random cat facts - Was able to get the data
-// fetch("https://cat-fact.herokuapp.com/facts")
-//     .then((response) => response.json())
-//     .then((JSONresponse) => console.log(JSONresponse))
-
-
-//Collection of 90 random cat facts - Was able to get data
-//Can access each fact by using catFacts[index 0-89]
 fetch("https://meowfacts.herokuapp.com/?count=90")
     .then((response) => response.json())
     .then((JSONresponse) => {
         const catFacts = JSONresponse.data
-        // console.log(catFacts)
         const catFactOne = document.querySelector("#cat-fact-one");
         const firstFetchedFact = document.querySelector("#fetch-one");
             firstFetchedFact.innerText = catFacts[5];
@@ -56,10 +46,34 @@ fetch("https://meowfacts.herokuapp.com/?count=90")
                 else {
                 const randomFactSubmit = document.querySelector("#random-fact-submit");
                 const thankYouMessage = document.querySelector("#thank-you");
-                randomFactSubmit.innerText = `❤️ Here's your random cat fact: ❤️\n  ${catFacts[4]}`;
+                randomFactSubmit.innerText = `❤️ Here's your random cat fact: ❤️\n  ${catFacts[38]}`;
                 thankYouMessage.innerText = "Thanks for signing up!!";
                 addFact.append(thankYouMessage,randomFactSubmit);
                 event.target.reset()
                 };
             });
+        const catFactFive = document.querySelector("#cat-fact-five");
+        const fifthFetchedFact = document.querySelector("#fetch-five");
+            fifthFetchedFact.innerText = catFacts[4];
+            catFactFive.append(fifthFetchedFact);
+        const catFactSix = document.querySelector("#cat-fact-six");
+        const sixthFetchedFact = document.querySelector("#fetch-six");
+            sixthFetchedFact.innerText = catFacts[10];
+            catFactSix.append(sixthFetchedFact);
+        const catFactSeven = document.querySelector("#cat-fact-seven");
+        const seventhFetchedFact = document.querySelector("#fetch-seven");
+            seventhFetchedFact.innerText = catFacts[81];
+            catFactSeven.append(seventhFetchedFact);
+        const catFactEight = document.querySelector("#cat-fact-eight");
+        const eighthFetchedFact = document.querySelector("#fetch-eight");
+            eighthFetchedFact.innerText = catFacts[85];
+            catFactEight.append(eighthFetchedFact);
+        const catFactNine = document.querySelector("#cat-fact-nine");
+        const ninthFetchedFact = document.querySelector("#fetch-nine");
+            ninthFetchedFact.innerText = catFacts[38];
+            catFactNine.append(ninthFetchedFact);
+        const catFactTen = document.querySelector("#cat-fact-ten");
+        const tenthFetchedFact = document.querySelector("#fetch-ten");
+            tenthFetchedFact.innerText = catFacts[42];
+            catFactTen.append(tenthFetchedFact);
     });
